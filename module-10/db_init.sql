@@ -27,7 +27,6 @@ CREATE TABLE Clients (
     ClientID INT PRIMARY KEY AUTO_INCREMENT,
     Name VARCHAR(100) NOT NULL,
     ContactInfo VARCHAR(255),
-    Assets DECIMAL(15, 2),
     EmployeeID INT,
     FOREIGN KEY (EmployeeID) REFERENCES Employees (EmployeeID)
 );
